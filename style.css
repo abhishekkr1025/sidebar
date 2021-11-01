@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(235, 243, 243);
+}
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: blue;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .logo{
+    size: 2rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    /* box-shadow: 2px 22px white; */
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+  }
+  .show-sidebar {
+    transform: translate(0);
+  }
+  .close-btn{
+    color: red;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+  }
+  
+  .close-btn:hover{
+    transform: rotate(360deg)
+  }
+  /* .hide-sidebar{
+    transform: translate(0);
+  } */
+.links{
+  list-style: none;
+  margin: 2rem;
+  
+}
+.links li{
+  margin: 17px 0px;
+ 
+}
+.links a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  
+ 
+}
+.social-icons{
+  list-style: none;
+  display: flex;
+  font-size: 2rem;
+  color: rgb(89, 89, 201);
+  
+  
+}
+.social-icons li a{
+ 
+  margin: 1.1rem;
+  
+}
+.theme-btn {
+  font-size: 2rem;
+  border-color: transparent;
+  background: transparent;
+  /* background-color; */
+  color: blue;
+}
+
+.dark-theme {
+  
+  background-color: rgb(0, 0, 0);
+  
+}
+
+
+
